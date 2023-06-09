@@ -30,7 +30,8 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## 1. Introduction<a name="step1">
 
-The Zigbee BLE bridge is a Zigbee Combined interface with Bluetooth Low Energy (BLE) Transparent UART functionality. Once the BLE connection is established the user can control the Zigbee network with their Mobile phone via MBD app. This application works as a Zigbee-BLE bridge and enables the users to control the Zigbee network and devices joined to the network, through BLE via MBD app. The user can trigger the Zigbee commissioning procedure and can create the Zigbee network using MBD app. Once the other Zigbee devices join this network, it will periodically start reporting its attribute values to the  Zigbee-BLE bridge device.
+This application demonstrates the multiprotocol functionality of the WBZ451 Curiosity Board. Here WBZ451 device simultaneously acts as Zigbee CI device and as a BLE device. In this application the Zigbee console commands are mapped onto Bluetooth Low Energy(BLE). The user can establish a BLE connection with the WBZ451 curiosity board through their mobile phone using MBD app. This application works as a Zigbee-BLE bridge and enables the users to control the Zigbee network and devices joined to the network by sending console commands from MBD app using BLE. The user can trigger the Zigbee commissioning procedure and can create the Zigbee network and once the other Zigbee devices join this network, it will periodically start reporting its attribute values to the  Zigbee-BLE bridge device which can will be shown on the MBD app.
+
 ![](Docs/Hardware_Setup.PNG)
 
 | Tip | Go through the [overview](https://onlinedocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-2/index.html?GUID-668A6CB2-F1FB-438D-9E1E-D67AC3C1C132) for understanding few key Zigbee 3.0 protocol concepts |
