@@ -30,8 +30,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## 1. Introduction<a name="step1">
 
-This application enables the users to create a Zigbee BLE bridge device with BLE Transparent UART functionality and Zigbee Combined interface application. Once the device is connected to the MBD app the user can control the Zigbee network with his Mobile phone via MBD app. The user can trigger the Zigbee commissioning procedure and can create the Zigbee network using MBD app. Once the Zigbee devices joins this network, it will start reporting its attribute values to the coordinator which is also shown on the MBD app.
-
+The Zigbee BLE bridge is a Zigbee Combined interface with Bluetooth Low Energy (BLE) Transparent UART functionality. Once the BLE connection is established the user can control the Zigbee network with their Mobile phone via MBD app. This application works as a Zigbee-BLE bridge and enables the users to control the Zigbee network and devices joined to the network, through BLE via MBD app. The user can trigger the Zigbee commissioning procedure and can create the Zigbee network using MBD app. Once the other Zigbee devices join this network, it will periodically start reporting its attribute values to the  Zigbee-BLE bridge device.
 ![](Docs/Hardware_Setup.PNG)
 
 | Tip | Go through the [overview](https://onlinedocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-2/index.html?GUID-668A6CB2-F1FB-438D-9E1E-D67AC3C1C132) for understanding few key Zigbee 3.0 protocol concepts |
@@ -65,6 +64,8 @@ This application enables the users to create a Zigbee BLE bridge device with BLE
 - Any Serial Terminal application like [TERA TERM](https://download.cnet.com/Tera-Term/3000-2094_4-75766675.html) terminal application
 
 - [MPLAB X IPE v6.05](https://microchipdeveloper.com/ipe:installation)
+
+- [Microchip Bluetooth Data (MBD app)](https://play.google.com/store/apps/details?id=com.microchip.bluetooth.data&hl=en&gl=US)
 
 ## 4. Harmony MCC Configuration<a name="step5">
 
@@ -160,7 +161,7 @@ Follow the steps provided in the link to [Build and program the application](htt
 	
 - Reset the other Zigbee devices to join into this network.
 - Once the network is established Extended light and Multisensor devices will start reporting their attribute values to Combined interface as shown in the video. 
-- The Extende Light can be switched ON or OFF by issuing an onOff command from the CI as shown below.
+- The Extended Light can be switched ON or OFF by issuing an onOff command from the CI as shown below.
 
 ![](Docs/zigbee-ble.gif)	
 
