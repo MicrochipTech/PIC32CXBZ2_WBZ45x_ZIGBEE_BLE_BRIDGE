@@ -30,7 +30,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## 1. Introduction<a name="step1">
 
-This application enables the users to create a Zigbee Combined interface application with BLE Transparent UART functionality. Here once the device is connected to the MBD app the Zigbee console commands are mapped onto BLE. The user can trigger the Zigbee commissioning procedure and can create the Zigbee network. The Zigbee devices start reporting the attributes once joined this Zigbee network.
+This application enables the users to create a Zigbee BLE bridge device with BLE Transparent UART functionality and Zigbee Combined interface application. Once the device is connected to the MBD app the user can control the Zigbee network with his Mobile phone via MBD app. The user can trigger the Zigbee commissioning procedure and can create the Zigbee network using MBD app. Once the Zigbee devices joins this network, it will start reporting its attribute values to the coordinator which is also shown on the MBD app.
 
 ![](Docs/Hardware_Setup.PNG)
 
@@ -103,8 +103,6 @@ This application enables the users to create a Zigbee Combined interface applica
 
 - From Device resources, go to Wireless->Drivers->BLE-> Services and select TRANSPARENT Service. Accept Dependencies or satisfiers.
 
-- The connection is shown below.
-
 ![](Docs/Connection.PNG)
 
 - From project graph, go to Plugins->PIN configuration and configure as follows.
@@ -121,7 +119,7 @@ This application enables the users to create a Zigbee Combined interface applica
 
 | Note | This application repository should be cloned/downloaded to perform the following steps. |
 | :- | :- |
-| Path |  |
+| Path | firmware/src |
 
 - Copy the "app_ble" folder, "app.c" and "app.h" which can be found by navigating to the following path: "...\firmware\src"
 - Paste the folder under source files in your project folder (...\firmware\src).
@@ -148,7 +146,7 @@ Follow the steps provided in the link to [Build and program the application](htt
 ## 6. Run the demo<a name="step7">
 
 - In this application, manual commissioning is used to create a Zigbee network.
-- The Zigbee CI and BLE transparent UART application starts advertising. Connect to the device using MBD app. 
+- The Zigbee CI and BLE transparent UART application starts advertising and we can establish a BLE Connection using MBD app. 
 - The user can control the Zigbee network with his Mobile phone connected to Zigbee CI device via BLE Link
 - To trigger the commissioning procedures manually, the user has to issue the following console commands on BLE UART in MBD app as given below:
 
