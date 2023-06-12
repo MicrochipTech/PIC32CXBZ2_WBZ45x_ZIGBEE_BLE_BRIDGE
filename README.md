@@ -1,4 +1,4 @@
-# PIC32CXBZ2_WBZ45x ZIGBEE BLE DEMO
+# PIC32CXBZ2_WBZ45x ZIGBEE BLE Bridge Demo
 
 <img src="Docs/IoT-Made-Easy-Logo.png" width=100>
 
@@ -30,7 +30,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## 1. Introduction<a name="step1">
 
-This application demonstrates the multiprotocol functionality of the WBZ451 Curiosity Board. Here WBZ451 device simultaneously acts as Zigbee CI device and as a BLE device. In this application the Zigbee console commands are mapped onto Bluetooth Low Energy(BLE). The user can establish a BLE connection with the WBZ451 curiosity board through their mobile phone using MBD app. This application works as a Zigbee-BLE bridge and enables the users to control the Zigbee network and devices joined to the network by sending console commands from MBD app using BLE. The user can trigger the Zigbee commissioning procedure and can create the Zigbee network and once the other Zigbee devices join this network, it will periodically start reporting its attribute values to the  Zigbee-BLE bridge device which will be shown on the MBD app.
+This application demonstrates the multiprotocol functionality of the PIC32CXBZ2 device / WBZ451 module. Here a Zigbee BLE Bridge application is demonstrated using PIC32CXBZ2 / WBZ451 device that functions as both a BLE and a Zigbee CI device simultaneously. In this application, the user can connect a smartphone to a Zigbee network via a BLE connection created by the WBZ451 device.For this the [Zigbee console commands](https://onlinedocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-2/index.html?GUID-BA19A3F8-CCEB-44C2-B5BF-C203DD6A8D41) are mapped onto Bluetooth Low Energy(BLE). With the help of console commands, the user can allow new devices to join the Zigbee network as well as monitor and control the Zigbee network.
 
 ![](Docs/Hardware_Setup.PNG)
 
