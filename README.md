@@ -30,7 +30,8 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## 1. Introduction<a name="step1">
 
-This application demonstrates the multiprotocol functionality of the PIC32CXBZ2 device / WBZ451 module. Here a Zigbee BLE Bridge application is demonstrated using PIC32CXBZ2 / WBZ451 device that functions as both a BLE and a Zigbee CI device simultaneously. In this application, the user can connect a smartphone to a Zigbee network via a BLE connection created by the WBZ451 device.For this the [Zigbee console commands](https://onlinedocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-2/index.html?GUID-BA19A3F8-CCEB-44C2-B5BF-C203DD6A8D41) are mapped onto Bluetooth Low Energy(BLE). With the help of console commands, the user can allow new devices to join the Zigbee network as well as monitor and control the Zigbee network.
+This application demonstrates the multiprotocol functionality of the PIC32CXBZ2 device / WBZ451 module. Here a Zigbee BLE Bridge application is demonstrated using PIC32CXBZ2 / WBZ451 device that functions as both a BLE and a Zigbee CI device simultaneously. In this application, the user can connect a smartphone to a Zigbee network via a BLE connection created by the WBZ451 device. In order to this, the [Zigbee console commands](https://onlinedocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-2/index.html?GUID-BA19A3F8-CCEB-44C2-B5BF-C203DD6A8D41) have been mapped to the BLE Transparent UART Service. With the help of console commands, the user can allow new devices to join the Zigbee network as well as monitor and control the Zigbee network.
+
 
 ![](Docs/Hardware_Setup.PNG)
 
