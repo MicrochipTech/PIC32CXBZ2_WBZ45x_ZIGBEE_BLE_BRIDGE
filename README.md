@@ -155,9 +155,12 @@ Follow the steps provided in the link to [Build and program the application](htt
 
 **Step 1** - Network Formation – “invokeCommissioning 4 0” 
 - If the device is a router or a coordinator it forms the network.
+
 **Step 2** - Network Steering – “invokeCommissioning 2 0” 
 - The device starts to search for a network to join.
+
 **Step 3** - SetFBRole 0 - this command to be given on application endpoint acts as target.
+
 **Step 4** - Finding & Binding - “invokeCommissioning 8 0” 
 - This command shall be given for any the devices which needs to be bound for clusters.
 	
