@@ -1,0 +1,58 @@
+{
+    "metaDataVersion": "1.0.0",
+    "category": "com.microchip.ide.project",
+    "content": {
+        "metaDataVersion": "1.3.0",
+        "name": "com.microchip.mplabx.project.PIC32CXBZ2_WBZ45x_ZIGBEE_BLE_BRIDGE",
+        "version": "1.0.0",
+        "displayName": "PIC32CXBZ2_WBZ45x ZIGBEE BLE Bridge Demo",
+        "projectName": "PIC32CXBZ2_WBZ45x_ZIGBEE_BLE_BRIDGE",
+        "shortDescription": "IoT Made Easy!- This application demonstrates multiprotocol capabilities of PIC32CXBZ2/WBZ45x by acting as both a BLE and Zigbee CI device. This application showcases a Zigbee BLE Bridge, allowing a smartphone to connect to a Zigbee network via a BLE connection created by the WBZ451 device.",
+        "ide": {
+            "name": "MPLAB X",
+            "semverRange": ">=6.05"
+        },
+        "compiler": [
+            {
+                "name": "XC32",
+                "semverRange": "^4.10.0"
+            }
+        ],
+        "dfp": {
+            "name": "PIC32CX-BZ_DFP",
+            "semverRange": "^1.1.218"
+        },
+        "configurator": {
+            "name": "MCC",
+            "semverRange": ">=5.1.17"
+        },
+        "device": {
+            "metaDataVersion": "1.0.0",
+            "category": "com.microchip.portal.contentRef",
+            "content": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.device",
+                "name": " PIC32CX-BZ2",
+                "versionRange": "*"
+            }
+        },
+        "author": "Roopika M M",
+        "peripherals": [
+            "SERCOM"
+        ],
+        "keywords": [
+             "IoT","MPLAB X","BLE","XC32","Zigbee","SERCOM","MCC","Wireless","Development Tool","Edge Node","High Performance"
+        ],
+        "additionalData": {
+            "longDescription": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.portal.fileRef",
+                "content": {
+                    "metaDataVersion": "1.0.0",
+                    "fileName": "./README.md",
+                    "mimeType": "text/markdown"
+                }
+            }
+        }
+    }
+}
