@@ -70,7 +70,7 @@ void APP_BleGapEvtHandler(BLE_GAP_Event_T *p_event)
         case BLE_GAP_EVT_CONNECTED:
         {
             appMsg.msgId = APP_MSG_UART_BLE_PRINT;
-            sprintf(appMsg.msgData,"\r\nBLE:Connected\r\nSwitching Console to UART\r\n\0");
+            sprintf(appMsg.msgData,"\r\nBLE:Connected\r\nSwitching Console to MBD app\r\n\0");
             OSAL_QUEUE_Send(&appData.appQueue, &appMsg, 0);
             USER_LED_Clear();
             conn_hdl = p_event->eventField.evtConnect.connHandle;

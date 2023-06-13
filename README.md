@@ -167,10 +167,11 @@ Follow the steps provided in the link to [Build and program the application](htt
 **Step 5**- Reset the other Zigbee devices to join into this network.
 
 - Once the network is established Extended light and Multisensor devices will start reporting their attribute values to Combined interface as shown in the video. 
-- The Extended Light can be switched ON or OFF by issuing an onOff command from the CI as shown below.
+- The Extended Light can be switched ON or OFF by issuing an onOff command(To get the network address, use getNetworkAddress command on your extended light device) from the CI as shown below.
+``` onOff -s 0x78ca 0x23 -on```
 
 ![](Docs/zigbee-ble.gif)	
 
 #### Note
 
-The device will be shown as "Zigbee_Ble" in MBD app. The user can also use "Commissioning on startup" on the Combined Interface device to create a Zigbee network. The procedure to commission a Zigbee network is discussed in detail in this [link](https://onlinedocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-2/index.html?GUID-7E62A1F7-3B35-4B5A-86DA-F5694100F9E8). 
+The user can also use "Commissioning on startup" on the Combined Interface device to create a Zigbee network. The procedure to commission a Zigbee network is discussed in detail in this [link](https://onlinedocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-2/index.html?GUID-7E62A1F7-3B35-4B5A-86DA-F5694100F9E8). 
