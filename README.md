@@ -88,6 +88,10 @@ This application demonstrates the multiprotocol functionality of the PIC32CXBZ2 
 
 ![](Docs/CI.PNG)
 
+#### Note
+
+To make the device as a Zigbee Coordinator, do not select "Act as bridge" option in the configuration options.
+
 - Add UART components needed for console logs and commands. Right click on the "⬦" in Zigbee console and add the satisfier and in the same way add SERCOM0 to the USART console. 
 
 - The SERCOM0 UART configuration is depicted as follows.
@@ -164,7 +168,7 @@ Follow the steps provided in the link to [Build and program the application](htt
 **Step 4** - Finding & Binding - “invokeCommissioning 8 0” 
 - This command shall be given for any the devices which needs to be bound for clusters.
 	
-**Step 5**- Reset the other Zigbee devices to join into this network.
+**Step 5**- Reset the other Zigbee devices to join into this network. Use "resetToFN" command on the console to reset the other Zigbee devices.
 
 - Once the network is established Extended light and Multisensor devices will start reporting their attribute values to Combined interface as shown in the video. 
 - The Extended Light can be switched ON or OFF by issuing an onOff command(To get the network address, use getNetworkAddress command on your extended light device) from the CI as shown below.
