@@ -71,7 +71,7 @@ This application demonstrates the multiprotocol functionality of the PIC32CXBZ2 
 
 ## 4. Harmony MCC Configuration<a name="step5">
 
-### Getting started with Multisensor application in WBZ451 Curiosity board 
+### Getting started with ZigBee BLE application in WBZ451 Curiosity board 
 
 | Tip | New users of MPLAB Code Configurator are recommended to go through the [overview](https://onlinedocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-B5D058F5-1D0B-4720-8649-ACE5C0EEE2C0) |
 | :- | :- |
